@@ -7,9 +7,7 @@
 |
 | Here is where you can register all of the routes for an application.
 | It's a breeze. Simply tell Laravel the URIs it should respond to
-| and give it the controller to call when that URI is requested.
-|
-*/
+| and give it the controller to call when that URI*/
 
 Route::get('/', function () {
     return view('welcome');
@@ -23,3 +21,4 @@ Route::get('admin/categories/delete/{id}', ['as'=>'admin.categories.delete', 'us
 Route::post('admin/categories/store', ['as'=>'admin.categories.store', 'uses'=>'CategoriesController@store']);
 
 
+/* TESTE DE COMMIT */
