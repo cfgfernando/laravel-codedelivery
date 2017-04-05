@@ -16,12 +16,11 @@
 
         {!! Form::model($category, ['route'=>['admin.categories.update', $category->id]]) !!}
 
+
+
         <!form input -->
 
-        <div class="form-group">
-            {!! Form::label('Name', 'Nome:') !!}
-            {!! Form::text('name', null, ['class'=>'form-control']) !!}
-        </div>
+        @include('admin.categories._form')
         <div class="form-group">
             {!! Form::submit('Alterar Categoria', ['class'=>'btn btn-primary'])  !!}
         </div>

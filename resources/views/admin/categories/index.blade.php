@@ -27,7 +27,7 @@
                             <a href="{{route('admin.categories.edit', ['id'=>$category->id])}}" class="btn btn-primary btn-sm">
                                 Editar
                             </a>
-                            <a href="{{route('admin.categories.edit', ['id'=>$category->id])}}" class="btn btn-danger btn-sm">Excluir</a>
+                            <a href="{{route('admin.categories.index', ['id'=>$category->id])}}" class="btn btn-danger btn-sm">Excluir</a>
                         </td>
                     </tr>
                     @endforeach

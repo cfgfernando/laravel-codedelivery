@@ -67,4 +67,11 @@ class CategoriesController extends Controller
         return redirect()->route('admin.categories.index');
 
     }
+
+    public function destroy(Request $request, $id)
+    {
+        $data = $request->all();
+        $this->repository->delete($data, $id);
+        return redirect()->route('admin.categories.index');
+    }
 }
