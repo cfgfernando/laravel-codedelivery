@@ -19,6 +19,8 @@ class ProductRepositoryEloquent extends BaseRepository implements ProductReposit
      *
      * @return string
      */
+
+
     public function model()
     {
         return Product::class;
